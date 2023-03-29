@@ -20,7 +20,7 @@ public class SalaryCalculator {
         {
 
 
-            if(iterator >= 0 && iterator < 5)
+            if(iterator > 0 && iterator <= 5)
             {
                 if(hoursPerDay[iterator] <= 8)
                     totalSalary+= hoursPerDay[iterator]*100;
@@ -32,9 +32,9 @@ public class SalaryCalculator {
 
                 }
             }
-            else if(iterator == 5)
-                totalSalary+= hoursPerDay[iterator]*125;
             else if(iterator == 6)
+                totalSalary+= hoursPerDay[iterator]*125;
+            else if(iterator == 0)
                 totalSalary+= hoursPerDay[iterator]*150;
         }
 
